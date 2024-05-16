@@ -1,0 +1,60 @@
+.about-name{
+    font-size: 12px;    
+    margin-left: 10px;
+}
+.shop-name{
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+
+/* spare introduction  section */
+
+.spare-container{
+    border: 1px solid lightgray;
+     
+}
+.img-container{
+    border-right: 1px solid rgb(229, 229, 229);
+}
+.spare-img{
+    width: 100%;
+    object-fit: cover;
+}
+.spare-name{
+    font-weight: 700;
+}
+.price-buy{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.price{
+    font-weight:700;
+    display: inline-block
+}
+.specification{
+     
+    padding-left:18px;
+}
+.buy-btn{
+    color:white ;
+    font-weight: 500;
+    background-color:  #17a2b8!important;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: opacity 0.5s;
+}
+.buy-btn:hover{
+    opacity: .8;
+    color: rgb(255, 255, 255);
+
+
+}
+.spare-container:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.spare-container:hover .spare-name{
+    color: red;
+}

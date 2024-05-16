@@ -1,0 +1,59 @@
+.about-name{
+    font-size: 12px;    
+    margin-left: 10px;
+}
+.shop-name{
+    margin-bottom: 0;
+    margin-left: 10px;
+} 
+.nav-button{
+    color: white;
+    border: none;
+    
+}
+
+
+
+ .brand-name{
+    color: white;
+    transition: all 0.5s ease;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+ }
+ 
+ .brand-name:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none; 
+ }
+ .brand-container{
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 10px;
+ }
+ .card{
+    margin-right: 5px;
+ }
+ .card:hover{
+    color: red;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.15) ;
+ }
+ .product-img{
+    height: 150px;
+ }
+ .card-img-top{
+    height: 100%;
+    width: 100%;
+ }
+
+.brand-container{
+    display: flex;
+    width: 100%;
+}
+#apple_sec{
+   display: block;
+   width: 100%;
+}
+#samsung_sec{
+   display: none;
+   width: 100%;
+}

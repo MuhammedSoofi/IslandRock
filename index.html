@@ -5,71 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Island Rock</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 <body>
-    <header class="bg-info p-3 header-sec" > 
-        <div class="row d-flex justify-content-end align-items-center">
-            <div class="col-md-4 col-9"> 
-                <h1 class="shop-name text-white">Island Rock</h1>
-                <p class="about-name text-white">Your Premier Mobile Spare Parts Wholesaler!</p>
-            </div>
-            <div class="col-md-8 col-3 d-flex justify-content-end     ">
-                <nav class="navbar navbar-expand-lg navbar-light nav-sec ">
-                    <button class=" navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <ion-icon class="nav-icon" name="apps-outline"></ion-icon>
-                    </button>
-                  
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                           <div class="head-icon">
-                            <ion-icon class="icon-pic" name="home-outline"></ion-icon>
-                            <a class="nav-link text-white" href="#">Home </a>
-                           </div>
-                           
-                        </li>
-                        <li class="nav-item">
-                          <div class="head-icon"> 
-                            <ion-icon class="icon-pic" name="people-circle-outline"></ion-icon>
-                            <a class="nav-link text-white" href="#about-sec">About Us</a>
-                          </div>
-                        </li>
-                        <li class="nav-item">
-                          <div class="head-icon"> 
-                            <ion-icon class="icon-pic" name="settings-outline"></ion-icon>
-                            <a class="nav-link text-white" href="#services">Our Services</a>
-                          </div>
-                        </li>
-                        <li class="nav-item active">
-                          <div class="head-icon">
-                            <ion-icon class="icon-pic" name="gift-outline"></ion-icon>
-                           <a class="nav-link text-white" href="">Our Products </a>
-                          </div>
-                        </li>
-                        <li class="nav-item active">
-                          <div class="head-icon"> 
-                            <ion-icon class="icon-pic" name="call-outline"></ion-icon>
-                           <a class="nav-link text-white" href="#contact-sec">Contact Us </a>
-                          </div>
-                        </li>
-                        
-                       
-                      </ul>
-                      
-                    </div>
-                  </nav>
-            </div>
+
+    <header class="bg-info">
+       <div class="header-section">
+        <div class="logo-name">
+          <h1>IslandRock</h1>
+          <p>Where excellence meets reliability in mobile spare parts</p>
         </div>
+
+        <!--navbar in lap view  view-->
+
+        <div class="menubar lap-view">
+           <ul>
+            <li><a href="#home-sec" id="nav-item">Home</a></li>
+            <li><a href="#about-sec" id="nav-item">About</a></li>
+            <li><a href="#services" id="nav-item">Services</a></li>
+            <li><a href="" class="mobile-menu" id="nav-item">Product</a></li>
+            <li><a href="#contact-sec" id="nav-item">Contact</a></li>
+            <li><a href="" id="menu-icon" onclick="showSidebar()"><i class="fa-solid fa-bars"></i></a></li>
+           </ul>
+        </div>
+
+       
+       </div>
+        <!--navbar in mobile view-->
+
+        <div class="mobile-view">
+          <ul>
+           <li><a href="" id="menu-icon" onclick="hideSidebar()"><i class="fa-solid fa-xmark"></i></a></li>
+           <li><a href="#home-sec"  >Home</a></li>
+           <li><a href="#about-sec"  >About</a></li>
+           <li><a href="#services"  >Services</a></li>
+           <li><a href="" >Product</a></li>
+           <li><a href="#contact-sec" >Contact</a></li>
+            
+          </ul>
+       </div>
     </header>
  
 
-    <section class="bg-light home-sec  ">
+    <section class="bg-light home-sec" id="home-sec">
       <div class="container">
         <div class="row ">
           <div class="col-md-6 mb-5">
             <div class="welcom-sec p-5"> 
-              <h6 class="i  dentity">Unveiling Our Identity</h6>
+              <h6 class="identity">Unveiling Our Identity</h6>
               <h1 class="irk-name">Island Rock, <br>Your Premier Exclusive Destination</h1>
               <p>
                <span class="name"> Island Rock</span>, your go-to destination for premium mobile spare 
@@ -81,11 +65,20 @@
             </div>
           </div>
           <div class="col-md-6">
-            <img class="img-fluid img-1" src="image/wallpapper-1.webp" alt="">
+            <img class="img-fluid img-1 mb-3" src="image/wallpapper-1.webp" alt="">
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Wats app section-->
+    <div class="watsapp">
+      <a id="watsappText" href="https://api.whatsapp.com/send?phone=971508584591">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+
+
     <section class="about-sec" id="about-sec"> 
       <div class="container pt-4">
         <h1 class="about-us ml-5 text-white ">About Us</h1>  
@@ -145,7 +138,7 @@
           <br> Explore the diverse selection of mobile accessories available to enhance your device. </p>
          
         <div class="row p-2">
-          <div class="col-md-6 our-parts ">
+          <div class="col-md-6 our-parts mb-3 ">
              
              <ul>
               <li><h3 class="mobile-spare">Mobile Spare Parts: </h3>  </li>
@@ -179,7 +172,9 @@
       </div>
 
     </section>
-    <section class="section services-section service-sec bg-light" id="services">
+
+
+    <section class="section services-section service-sec bg-light py-5" id="services">
       <div class="container">
           <div class="row">
               <div class="col-lg-6">
@@ -260,59 +255,28 @@
       </div>
   </section>
 
-  <section class="p-5" id="contact-sec">
-    <div class="container">
-      <div class="section-title mt-5">
-        <h2>For inquiries or orders, contact Island Rock today</h2>
-         
-    </div>
-      <form class="">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Name</label>
-            <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Mobile Number</label>
-            <input type="tel" class="form-control" id="inputPassword4" placeholder="Mobile number">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Place</label>
-            <input type="text" class="form-control" id="inputEmail4" placeholder="Address">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputAddress">Message</label>
-          <textarea class="form-control" id="" cols="30" rows="10"></textarea>
-           
-        </div>
-            
-        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
-      </form>
-    </div>
-  </section>
+  
 
-  <section class="bg-light p-3 location-sec">
-    <div class="container  ">
+  <section class="bg-white py-5 location-sec" id="contact-sec">
+    <div class="container ">
       <div class="section-title mt-5">
         <h2>Where to Find Us</h2>  
      </div>
       <div class="row">
-        <div class="col-md-6 location-img">
+        <div class="col-md-6 location-img mb-3">
           <a href="https://www.google.com/maps/@25.2756581,55.3077004,3a,75y,171.7h,90.85t/data=!3m6!1e1!3m4!1sKAjja8Mqqk1PQu84SMTJJQ!2e0!7i16384!8i8192?entry=ttu"> 
             <img style="width: 100%; height: 17em; object-fit: cover; border-radius: 10px;" src="image/location-1.avif" alt="">    
           </a>
           <div class="tool-tip">
-            <p  >Click hear to reach us</p>
+            <p >Click hear to reach us</p>
           </div> 
         </div>
         <div class="col-md-6 " style="box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15 ); padding: 20px; border-radius: 10px;">
-           <p>Island Rock <br>Located at the heart of Dubai <br>Dicover us: <br> Near Dalmook Masjid <br>Naif, Deira, Dubai <br>United Arab Emirates</p>
-        </div>
+           <p>Island Rock <br> 971508356963<br> Near Dalmook Masjid <br>Naif, Deira, Dubai <br>United Arab Emirates</p>
+           <button class="whatsappButton">
+            <a href="https://api.whatsapp.com/send?phone=971508584591"><i class="fa-brands fa-whatsapp"></i> Chat now</a>
+           </button>
+          </div>
          
       </div>
      
@@ -324,13 +288,11 @@
       <div class="row p-2 ">
         <div class="col-md-6 text-white ">
            <h4 class="m-0">Island Rock</h4>
-           <p class="m-0">Your Premier Mobile Spare Parts Wholesaler!</p>
+           <p class="m-0">Where excellence meets reliability in mobile spare parts</p>
         </div>
         <div class="col-md-6">
            <p class="text-white">© 2024 Island Rock. All rights reserved.</p>
-           <ion-icon name="logo-instagram" style="margin-right: 10px; color: white;"></ion-icon>
-           <ion-icon name="call-outline"  style="margin-right: 10px; color: white;"></ion-icon>
-        </div>
+         </div>
       </div>
     </div>
   </footer>
@@ -339,9 +301,9 @@
 
    
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
